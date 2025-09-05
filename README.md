@@ -13,8 +13,7 @@ A comprehensive Node.js/Express.js backend application for managing car rental s
 - [Usage Examples](#-usage-examples)
 - [Testing](#-testing)
 - [Environment Variables](#-environment-variables)
-- [Contributing](#-contributing)
-- [License](#-license)
+
 
 ## ✨ Features
 
@@ -434,4 +433,5 @@ car-rent-backend/
 ├── package.json
 └── README.md
 ```
+
 
