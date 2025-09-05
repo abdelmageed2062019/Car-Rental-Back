@@ -1,107 +1,34 @@
-Car Rental Backend Application
-Overview
-This is a comprehensive Node.js/Express.js backend application for a car rental service management system. It provides a complete API for managing car rentals, users, vehicles, and branch locations with role-based access control and advanced rental management features.
-Core Features
-🚗 Car Management
-Vehicle Catalog: Complete car inventory management with detailed specifications
-Technical Specifications: Gearbox type (Manual/Automatic), fuel type (Petrol/Diesel/Electric/Hybrid), doors, seats, air conditioning
-Equipment Tracking: ABS, airbags, cruise control, and other safety features
-Image Management: Multiple car images with upload and deletion capabilities
-Availability Management: Real-time availability tracking and status updates
-Search & Filtering: Advanced search by brand, type, availability, and specifications
-👥 User Management System
-Multi-Role Support: Customer, Manager, and Admin roles with different permissions
-Comprehensive User Profiles:
-Personal information (name, email, phone, date of birth)
-Driver license validation with expiry tracking
-Complete address information
-User preferences (car types, fuel preferences, budget)
-Rental history tracking
-Authentication & Security: JWT-based authentication with password hashing
-Profile Management: Users can update their profiles and change passwords
-🏢 Branch Management
-Location Services: Geographic coordinates with 2D sphere indexing for location-based queries
-Multi-Location Support: Multiple rental branches across different cities
-Nearby Branch Search: Find branches within specified radius
-City-Based Filtering: Search branches by city
-🚙 Rental Management System
-Complete Rental Lifecycle:
-Pending → Confirmed → Active → Completed/Cancelled
-Automated status transitions with timestamps
-Advanced Booking System:
-Date validation (future dates only, end date after start date)
-Automatic duration calculation
-Price calculation with additional fees
-Conflict detection for overlapping rentals
-Pickup & Return Management:
-Separate pickup and return locations
-Branch-based location tracking
-Time scheduling and notes
-Car Condition Tracking:
-Pre-rental inspection (fuel level, mileage, exterior/interior condition)
-Post-rental inspection with damage reporting
-Photo documentation support
-Payment Integration:
-Multiple payment methods (credit card, debit card, cash, bank transfer, digital wallet)
-Payment status tracking
-Transaction ID management
-Insurance Management:
-Multiple insurance tiers (basic, standard, premium, none)
-Coverage and deductible tracking
-Cancellation Policy:
-Flexible cancellation rules
-Refund calculation based on policy
-Deadline-based cancellation restrictions
-📊 Administrative Features
-Dashboard & Analytics: Rental statistics and overview
-User Management: Admin can manage all users, search, and perform CRUD operations
-Rental Oversight: Complete rental management with status updates
-Branch Administration: Full branch management capabilities
-Search & Reporting: Advanced search across all entities
-Technical Architecture
-Backend Stack
-Runtime: Node.js with Express.js framework
-Database: MongoDB with Mongoose ODM
-Authentication: JWT (JSON Web Tokens) with bcrypt password hashing
-File Upload: Multer for image handling
-Security: Helmet for security headers, CORS configuration
-Environment: dotenv for configuration management
-API Structure
-RESTful Design: Clean REST API endpoints
-Route Organization: Separate route files for each entity (users, cars, rentals, branches)
-Middleware: Authentication, authorization, and file upload middleware
-Error Handling: Comprehensive error handling and validation
-Database Design
-MongoDB Collections: Users, Cars, Rentals, Branches
-Relationships: Proper referencing between collections
-Indexing: Optimized queries with proper indexing
-Validation: Comprehensive schema validation with custom validators
-Virtual Fields: Computed fields for age, rental status, etc.
-Security Features
-Password Security: bcrypt with salt rounds
-JWT Authentication: Secure token-based authentication
-Role-Based Access: Different permission levels for users, managers, and admins
-Input Validation: Comprehensive request validation
-CORS Protection: Configured for specific origins
-API Endpoints
-Public Endpoints
-Car browsing and search
-Branch information
-User registration and login
-Authenticated Endpoints
-User profile management
-Rental creation and management
-Personal rental history
-Admin Endpoints
-Complete user management
-Car inventory management
-Rental oversight and statistics
-Branch management
-Key Business Logic
-Rental Conflict Prevention: Ensures no overlapping rentals for the same car
-Dynamic Pricing: Automatic price calculation based on duration and additional fees
-Status Management: Automated rental status transitions with business rules
-Condition Tracking: Comprehensive vehicle condition monitoring
-Geographic Services: Location-based branch and car searches
-Payment Integration: Multiple payment methods with status tracking
-This application provides a complete, production-ready backend for a car rental service with enterprise-level features for managing the entire rental lifecycle from booking to return.
+I'll create a comprehensive GitHub README for your car rental backend application.
+
+
+[1 tool called]
+
+I've created a comprehensive GitHub README for your car rental backend application! The README includes:
+
+## 📋 **Key Sections:**
+
+1. **Project Overview** - Clear description with emojis for visual appeal
+2. **Features** - Detailed breakdown of all major functionality
+3. **Tech Stack** - Complete technology stack used
+4. **Installation Guide** - Step-by-step setup instructions
+5. **API Documentation** - Complete endpoint reference with tables
+6. **Database Schema** - Detailed schema documentation with examples
+7. **Authentication** - JWT and role-based access explanation
+8. **Usage Examples** - Real code examples for common operations
+9. **Testing** - Artillery testing commands
+10. **Environment Variables** - Configuration setup
+11. **Project Structure** - File organization overview
+12. **Contributing Guidelines** - How others can contribute
+13. **License & Support** - Legal and contact information
+
+## �� **Features of this README:**
+
+- **Professional formatting** with clear sections and tables
+- **Code examples** for common API operations
+- **Visual elements** with emojis and proper markdown formatting
+- **Complete API reference** with all endpoints documented
+- **Database schema** with actual field definitions
+- **Installation instructions** that anyone can follow
+- **Testing documentation** for the Artillery tests we set up
+
+The README is now ready to be used on GitHub and will provide users with everything they need to understand, install, and use your car rental backend API!
